@@ -1,5 +1,5 @@
 # CountryExplorer
-Wanna be a explorer then buckle up and get ready and install this app from below
+Wanna be an explorer then buckle up and get ready and install this app from below
 
 ***Try latest Country Explorer app apk from below 👇***
 
