@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.fragments.Details">
+
+    <ImageView
+        android:id="@+id/imgdFlag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtdName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="INDIA"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgdFlag" />
+
+    <TextView
+        android:id="@+id/Capital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/capital"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtdName" />
+
+    <TextView
+        android:id="@+id/txtdCapital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Delhi"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@id/Capital"
+        app:layout_constraintTop_toBottomOf="@id/txtdName" />
+
+    <TextView
+        android:id="@+id/Region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/region"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Capital" />
+
+    <TextView
+        android:id="@+id/txtdRegion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Asia"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/txtdCapital"
+        app:layout_constraintTop_toBottomOf="@id/txtdCapital" />
+
+    <TextView
+        android:id="@+id/Subregion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/subregion"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Region" />
+
+    <TextView
+        android:id="@+id/txtdSubregion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="SouthAsia"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/txtdRegion"
+        app:layout_constraintTop_toBottomOf="@id/txtdRegion" />
+
+    <TextView
+        android:id="@+id/Population"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/population"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Subregion" />
+
+    <TextView
+        android:id="@+id/txtdPopulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="10000"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@id/txtdSubregion"
+        app:layout_constraintTop_toBottomOf="@id/txtdSubregion" />
+
+    <TextView
+        android:id="@+id/Borders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Borders"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Population" />
+
+    <TextView
+        android:id="@+id/txtdBorders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:maxLines="10"
+        android:text="Pakistan\nBangladesh\nSri Lanka\nBhutan\nChina"
+        app:layout_constraintStart_toStartOf="@id/txtdPopulation"
+        app:layout_constraintTop_toBottomOf="@id/txtdPopulation" />
+
+    <TextView
+        android:id="@+id/Languages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/languages"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtdBorders" />
+
+    <TextView
+        android:id="@+id/txtdLanguages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:maxLines="10"
+        android:text="Hindi\nUrdu\nPunjabi\nGujrati"
+        app:layout_constraintStart_toStartOf="@id/txtdBorders"
+        app:layout_constraintTop_toBottomOf="@id/txtdBorders" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

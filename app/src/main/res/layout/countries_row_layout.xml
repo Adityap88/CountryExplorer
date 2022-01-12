@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="result"
+            type="com.research.adverb_assigment.models.CountriesItem" />
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/crdCountries"
+        android:layout_width="match_parent"
+        onCountryClickedListener="@{result}"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        app:cardCornerRadius="10dp">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imgFlag"
+                loadImage="@{result.flags.png}"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:scaleType="center"
+                android:src="@drawable/ic_launcher_foreground"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@{result.name.official}"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/imgFlag"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtCapital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@{result.capital.get(0)}"
+                android:textSize="15sp"
+                app:layout_constraintStart_toEndOf="@id/imgFlag"
+                app:layout_constraintTop_toBottomOf="@id/txtName" />
+
+            <TextView
+                android:id="@+id/txtRegion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@{result.region}"
+                app:layout_constraintStart_toEndOf="@id/imgFlag"
+                app:layout_constraintTop_toBottomOf="@id/txtCapital" />
+
+            <TextView
+                android:id="@+id/txtSubregion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@{result.subregion}"
+                app:layout_constraintStart_toEndOf="@id/txtRegion"
+                app:layout_constraintTop_toBottomOf="@id/txtCapital" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>
