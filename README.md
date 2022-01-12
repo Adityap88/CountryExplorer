@@ -18,6 +18,11 @@ Home | Details
 
 <br />
 
+## Architecture 🗼
+This app uses [***MVVM (Model View View-Model)***](https://developer.android.com/jetpack/docs/guide#recommended-app-arch) architecture.
+
+![](https://github.com/TheCodeMonks/Notes-App/blob/master/screenshots/ANDROID%20ROOM%20DB%20DIAGRAM.jpg)
+
 ## Build-tool 🧰
 You need to have [Android Studio Beta 3 or above](https://developer.android.com/studio/preview) to build this project.
 <br>
